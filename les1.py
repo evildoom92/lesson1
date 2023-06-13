@@ -1,10 +1,10 @@
-from random import random
-N = 10
-def func(mn,mx):
-    for i in range(N):
-        a[i] = int(random() * (mx-mn+1)) + mn
-a = [0] * N
-p = int(input("Ведите минимум "))
-q = int(input("Ведите максимум "))
-func(p,q)
-print(a)
+l = []
+def sum_digits(b):
+    if (b == 0):
+        return l
+    dig = b % 10
+    l.append(dig)
+    sum_digits(b // 10)
+n = int(input("Введите число: "))
+sum_digits(n)
+print(sum(l))
