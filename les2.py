@@ -1,6 +1,6 @@
-f = open("file.txt",'w')
-while True:
-    s = input()
-    if s == '': break
-    f.write(s+'\n')
-f.close()
+def sum(n):
+    if n < 10: return n
+    return sum(n // 10) + n % 10
+n = int(input())
+if n < 0: n = -n;
+print(sum(n))
