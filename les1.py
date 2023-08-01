@@ -9,8 +9,36 @@ class Animal:
         print("Пол: " + self.s)
     def Age(self):
         print("Возраст: " + str(self.a))
-Animal1 = Animal("Муся", "Девочка")
-Animal1.Name()
-Animal1.Sex()
-Animal1.Age()
 
+
+class Dog(Animal):
+    def __init__(self, name, sex):
+        super().__init__(name, sex)
+    def _run(self):
+        print("Собака бегает")
+class Rabbit(Animal):
+    def __init__(self, name, sex):
+        super().__init__(name, sex)
+    def jump(self):
+        print("Кролик прыгает")
+
+class Cat(Animal):
+    def __init__(self, name, sex):
+        super().__init__(name, sex)
+    def __sleep(self):
+        print("Кошка спит")
+
+Dog1 = Dog("Шарик ", "Мальчик")
+Dog1.Name()
+Dog1.Sex()
+Dog1._run()
+
+Cat1 = Cat("Муся ", "Девочка")
+Cat1.Name()
+Cat1.Sex()
+Cat1._Cat__sleep()
+
+Rabbit1 = Rabbit("Федя", "Мальчик")
+Rabbit1.Name()
+Rabbit1.Sex()
+Rabbit1.jump()
